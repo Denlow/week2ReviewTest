@@ -1,7 +1,10 @@
+body {
+  background-color: pink;
+}
+
 img {
   max-width: 100%;
   height: auto;
-
 }
 
 #hath img{
