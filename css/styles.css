@@ -2,10 +2,33 @@ body {
   background-color: pink;
 }
 
+h1 {
+  font-family: cursive;
+  font-size: 50px;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
+
+p{
+  text-align: center;
+  font-family: serif;;
+  font-size: 20px;
+}
+
+strong{
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+/*.ad img {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+}*/
 
 #hath img{
   margin-top: 15%;
