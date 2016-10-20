@@ -10,32 +10,43 @@
   </head>
   <body>
     <div class="container">
+      <h1>Welcome to the Date-A-Celeb website!</h1>
+      <p>Here you have the opportunity to enter in just a few words about yourself, and have the potential to be matched with your soul mate celebrity!</p>
 
-    </div>
-    <h1>Welcome to the Date-A-Celeb website!</h1>
-    <p>Here you have the opportunity to enter in just a few words about yourself, and have the potential to be matched with your soul mate celebrity!</p>
-    <div class="row">
-      <div class="col-md-6">
-        <form>
-          <div class="radio">
-            <label>
-              <input type="radio" name="preference" value="men">
-              Men
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="preference" value="women">
-              Women
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="preference" value="both">
-              Both Men and Women
-            </label>
-          </div>
-        </form>
+      <div class="row">
+        <div class="col-md-2">
+          <form>
+            <h2>Gender Preference</h2>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="men">
+                Men
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="women">
+                Women
+              </label>
+            </div>
+            <h2>Age Range</h2>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="young">
+                Young
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="mature">
+                Mature
+              </label>
+            </div>
+            <br>
+            <button class="btn btn-success" name="button">Match</button>
+          </form>
+        </div>
+        
       </div>
     </div>
   </body>
