@@ -1,21 +1,30 @@
 body {
-  background-color: pink;
+  background-color: gold;
 }
 
 h1 {
-  font-family: cursive;
+  font-family: fantasy;
   font-size: 50px;
+  color: red;
+}
+
+h2 {
+  color: black;
+  font-weight: bolder;
+  font-family: times;
 }
 
 img {
   max-width: 100%;
   height: auto;
+
 }
 
-p{
+p {
   text-align: center;
   font-family: serif;;
-  font-size: 20px;
+  font-size: 30px;
+  color: blue;
 }
 
 strong{
@@ -23,6 +32,9 @@ strong{
   font-family: sans-serif;
 }
 
+button {
+
+}
 /*.ad img {
   margin-top: 25px;
   margin-bottom: 10px;
@@ -30,10 +42,9 @@ strong{
   margin-right: 20%;
 }*/
 
-#hath img{
-  margin-top: 15%;
-}
 
-#streep, #hartnett, #rourke, #hath {
+
+#ruby, #sharp, #design, #drupal {
   display: none;
+  width: 500px;
 }

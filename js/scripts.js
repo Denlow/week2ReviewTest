@@ -1,67 +1,67 @@
-// var intoMen = false;
-// var intoWomen = false;
-// var intoYoung = false;
-// var intoMature = false;
+// var intoProg = false;
+// var intoWeb = false;
+// var intoVisual = false;
+// var intoCoding = false;
 
 // var checkMatch = function() {
-//   if ($("#men").is(':checked')) {
-//       intoMen = true;
+//   if ($("#prog").is(':checked')) {
+//       intoProg = true;
 //   }
-//   if ($("#women").is(':checked')) {
-//       intoWomen = true;
+//   if ($("#web").is(':checked')) {
+//       intoWeb = true;
 //   }
-//   if ($("#young").is(':checked')) {
-//       intoYoung = true;
+//   if ($("#visual").is(':checked')) {
+//       intoVisual = true;
 //   }
-//   if ($("#mature").is(':checked')) {
-//       intoMature = true;
+//   if ($("#coding").is(':checked')) {
+//       intoCoding = true;
 //   }
 // };
 
 // BACK-END
 
-var getResults = function(intoMen, intoWomen, intoYoung, intoMature) {
-  if (intoMen && intoYoung) {
-    return "hartnett";
+var getResults = function(intoProg, intoWeb, intoVisual, intoCoding) {
+  if (intoProg && intoVisual) {
+    return "ruby";
   }
-  else if (intoMen && intoMature) {
-    return "rourke";
+  else if (intoProg && intoCoding) {
+    return "sharp";
   }
-  else if (intoWomen && intoYoung) {
-    return "hath";
+  else if (intoWeb && intoVisual) {
+    return "design";
   }
-  else if (intoWomen && intoMature) {
-    return "streep";
+  else if (intoWeb && intoCoding) {
+    return "drupal";
   }
 };
 
 
 // FRONT-END
 
-var displayOutput = function(celeb) {
-  $("#streep, #hartnett, #rourke, #hath").hide();
-  $("#" + celeb).show();
+var displayOutput = function(programs) {
+  $("#prog, #web, #visual, #coding").hide();
+  $("#" + programs).show();
 };
 
 $(document).ready(function(){
   $("button#match").click(function(event){
 
-    if ($("#men").is(':checked')) {
-        var intoMen = true;
+    if ($("#prog").is(':checked')) {
+        var intoProg = true;
     }
-    if ($("#women").is(':checked')) {
-        var intoWomen = true;
+    if ($("#web").is(':checked')) {
+        var intoWeb = true;
     }
-    if ($("#young").is(':checked')) {
-        var intoYoung = true;
+    if ($("#visual").is(':checked')) {
+        var intoVisual = true;
     }
-    if ($("#mature").is(':checked')) {
-        var intoMature = true;
+    if ($("#coding").is(':checked')) {
+        var intoCoding = true;
     }
 
-    var celeb = getResults(intoMen, intoWomen, intoYoung, intoMature);
+    var programs = getResults(intoProg, intoWeb, intoVisual, intoCoding);
 
-    displayOutput(celeb)
+    displayOutput(programs)
 
   event.preventDefault();
   });
